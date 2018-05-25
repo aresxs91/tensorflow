@@ -1151,7 +1151,9 @@ class AttentionWrapper(rnn_cell_impl.RNNCell):
         does not match the batch size of `initial_cell_state`, proper
         behavior is not guaranteed.
       do_acvi: Whether to apply amortization on the context vector, based on the paper:
-      # TODO: Insert paper arxiv link
+      Sotirios Chatzis, Aristotelis Charalampous, Kyriacos Tolias et al.
+      "Amortized Context Vector Inference for Sequence-to-Sequence Networks".
+      https://arxiv.org/abs/1805.09039
       name: Name to use when creating ops.
 
     Raises:
