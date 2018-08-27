@@ -1363,7 +1363,7 @@ class AttentionWrapper(rnn_cell_impl.RNNCell):
       all_attentions = []
       all_histories = []
 
-      if self._do_acvi:
+      if not self._do_acvi:
           for i, attention_mechanism in enumerate(self._attention_mechanisms):
               attention, alignments = _compute_attention(
                   attention_mechanism, cell_output, previous_alignments[i],
